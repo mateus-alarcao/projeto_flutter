@@ -13,17 +13,17 @@ class MapaPage extends StatelessWidget {
       ),
       body: FlutterMap(
         options: MapOptions(
-          initialCenter: LatLng(-15.78, -47.93), // Brasília
+          initialCenter: LatLng(-15.78, -47.93),
           initialZoom: 13,
         ),
         children: [
-          // 🔹 Camada do mapa (OBRIGATÓRIO)
+          // 🔹 Camada do mapa 
           TileLayer(
             urlTemplate: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
             userAgentPackageName: 'com.mateus.mapa',
           ),
 
-          // 🔹 Marcador no mapa (opcional)
+          // 🔹 Marcador no mapa 
           MarkerLayer(
             markers: [
               Marker(
